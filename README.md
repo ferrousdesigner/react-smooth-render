@@ -4,7 +4,7 @@
 
 Mount & unmount react components visually smooth using **React Fragments** without leaving any footprints.
 
-Demo: [https://ferrousdesigner.github.io/react-smooth-render/](https://ferrousdesigner.github.io/multigradient/)
+Demo: [https://ferrousdesigner.github.io/react-smooth-render/](https://ferrousdesigner.github.io/react-smooth-render/)
 
 ## Props
 
