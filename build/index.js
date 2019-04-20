@@ -377,7 +377,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var style = function style(timing) {
-	return '\n.react-smooth-render.hide {\n    animation: hide ' + timing + 'ms forwards;\n}\n.react-smooth-render.reveal {\n\tanimation: reveal ' + timing + 'ms forwards;\n}\n.react-smooth-render.invisible {\n    display: none;\n}\n@keyframes hide {\n    0 {\n      opacity: 1;\n    }\n    90% {\n      opacity: 0;\n    }\n    100% {\n\t\t\topacity: 0;\n\t\t\tdisplay: none;\n    }\n}\n@keyframes reveal {\n\t0% {\n\t\topacity: 0;\n\t}\n\t10% {\n\t\topacity: 0;\n\t}\n\t100% {\n\t\topacity: 1;\n\t}\n}\n';
+	return '\n.react-smooth-render.hide {\n    animation: hide ' + timing + 'ms linear forwards;\n}\n.react-smooth-render.reveal {\n\tanimation: reveal ' + timing + 'ms linear forwards;\n}\n.react-smooth-render.invisible {\n    display: none;\n}\n@keyframes hide {\n    0 {\n      opacity: 1;\n    }\n    90% {\n      opacity: 0;\n    }\n    100% {\n\t\t\topacity: 0;\n\t\t\tdisplay: none;\n    }\n}\n@keyframes reveal {\n\t0% {\n\t\topacity: 0;\n\t}\n\t10% {\n\t\topacity: 0;\n\t}\n\t100% {\n\t\topacity: 1;\n\t}\n}\n';
 };
 // Add all the styles to the head
 
