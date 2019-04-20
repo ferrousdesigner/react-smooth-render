@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import StyleMaker from 'stylemaker';
 const style = timing => `
 .react-smooth-render.hide {
-    animation: hide ${timing}ms forwards;
+    animation: hide ${timing}ms linear forwards;
 }
 .react-smooth-render.reveal {
-	animation: reveal ${timing}ms forwards;
+	animation: reveal ${timing}ms linear forwards;
 }
 .react-smooth-render.invisible {
     display: none;
