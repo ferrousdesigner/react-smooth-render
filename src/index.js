@@ -44,13 +44,13 @@ export default class SmoothRender extends Component {
 			anchor: !(props.initiallyHidden || props.hidden),
 		};
 	}
-	componentWillMount() {
+	componentDidMount() {
 		const { timing } = this.props;
 		if (!document.getElementById('react-smooth-render-styles')) {
 			StyleMaker(style(timing), 'react-smooth-render-styles', true);
 		}
 	}
-	componentWillReceiveProps(nextProps) {
+	componentDidUpdate(nextProps) {
 		const { initialClass, anchor } = this.state
 		const { hidden, timing } = nextProps
 		if (initialClass === 'initially-invisible') {
